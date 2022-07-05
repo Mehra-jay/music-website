@@ -2,21 +2,21 @@ const express =require("express");
 const path=require("path");
 const app=express();
 const bodyparser=require("body-parser")
-// var mongoose = require('mongoose');
-// mongoose.connect('mongodb+srv://mihir17:ZrbsJ6C1sadyY5bU@cluster0.ssu46.mongodb.net/foodWeb?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+var mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://jayyuu11:RIJ5IeorjCEa8WuI@cluster0.glkza.mongodb.net/register?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 const port=8080;
 
 
 // //DEFINING THE MONGOOSE SCHEMA
-// var registrationSchema = new mongoose.Schema({
-//     name: String,
-//     phone: String,
-//     email: String,
-//     address: String,
-//     learn: String
-// });
+var registrationSchema = new mongoose.Schema({
+    name: String,
+    phone: String,
+    email: String,
+    address: String,
+    learn: String
+});
 
-// var Register = mongoose.model('Register', registrationSchema); 
+var Register = mongoose.model('Register', registrationSchema); 
 
 //EXPRESS SPECIFIC STUFF
 
@@ -41,16 +41,16 @@ app.get('/register',(req,res)=>{
     res.status(200).render('register.pug',parass)
 });
 
-// app.post('/register',(req,res)=>{
-//     var mydata=new Register(req.body);
-//     mydata.save().then(()=>{
-//         res.send("This has been saved to the database successfully")
-//     }).catch(()=>{
-//         res.status(400).send("Item was not saved to the database")
-//     });
+app.post('/register',(req,res)=>{
+    var mydata=new Register(req.body);
+    mydata.save().then(()=>{
+        res.send("This has been saved to the database successfully")
+    }).catch(()=>{
+        res.status(400).send("Item was not saved to the database")
+    });
 
-//     // res.status(200).render('register.pug')
-// });
+    // res.status(200).render('register.pug')
+});
 
 // app.get("/static/bg3.jpg", function(req, res){
 //     res.writeHead(200, {'Content-Type': 'image/jpeg'});
