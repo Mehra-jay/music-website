@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Gentium+Book+Plus:ital@1&family=Ubuntu:wght@700&display=swap');
+
+
+h1{
+    text-align: center ;
+    /* margin: 12px 0; */
+    margin: 0.75rem 0;
+}
+
+.container{
+   
+    min-height: 88vh;
+    /* margin: 40px 0; */
+    margin: 2.5rem 0;
+}
+
+.container h1{
+    font-family: 'Gentium Book Plus', serif;
+    /* font-size: 36px; */
+    font-size: 2.25rem;
+}
+
+.myform{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.inputclass{
+    font-size: 1.125rem;
+    /* font-size: 18px; */
+    width: 50%;
+    padding: 0.5625rem;
+    /* padding: 9px; */
+    margin: 0.625rem;
+    /* margin: 10px; */
+    border-radius: 0.5625rem;
+    /* border-radius: 9px; */
+    border: 2px solid rgb(129 13 13);
+    outline: none;
+}
+
+.btn{
+    color: white;
+    padding: 0.75rem 1.125rem;
+    /* padding: 12px 18px; */
+    font-size: 1rem;
+    /* font-size: 17px; */
+    border: 0.125rem solid red;
+    /* border: 2px solid red; */
+    border-radius: 0.75rem;
+    /* border-radius: 12px; */
+    background-color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+

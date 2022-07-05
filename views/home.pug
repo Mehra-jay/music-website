@@ -1,0 +1,51 @@
+extends base.pug
+
+block scripts   
+    script(src="/static/index.js")
+
+block style 
+    style       
+      include ../static/style.css  
+     
+
+block content 
+    
+
+    section#intro 
+      div WELCOME TO Mu$ical-Be@t
+      div.small Learn With Us
+    
+    section#ouraim 
+      h2 Our Aim
+      div.block
+        h3 Sing and Learn
+        div.block-box
+          div.block-img 
+              img(src="/static/images/sing.jpg")
+          div.block-content
+            p Enjoy and sing in harmony. We will help you to learn various classical as well as new songs.  
+
+      div.block
+        h3 Play instrument and learn
+        div.block-box
+          div.block-img 
+              img(src="/static/images/inst.jpg")
+          div.block-content
+            p Enjoy learning the best instruments which you always wanted to play like guitar,tabla etc.
+
+      div.block
+        h3  Guidance for individual 
+        div.block-box
+          div.block-img 
+              img(src="/static/images/learning.jpg")
+          div.block-content
+            p Don't be worried because we will be providing proper guidance and teaching to each individual.
+
+    section#instrumentsection
+      h2 Our instruments
+        div#instrument
+          img(src="/static/images/instru1.jpg",alt="Instrument Image",class="instruimage") 
+          img(src="/static/images/instru2.jpg",alt="Instrument Image",class="instruimage")
+          img(src="/static/images/instru3.jpg",alt="Instrument Image",class="instruimage") 
+          img(src="/static/images/instru4.jpg",alt="Instrument Image",class="instruimage")
+          img(src="/static/images/instru5.jpg",alt="Instrument Image",class="instruimage")

@@ -1,0 +1,22 @@
+extends base.pug
+
+block scripts   
+    script(src="/static/index.js")
+
+block style 
+    style       
+      include ../static/style.css  
+      include ../static/styleregister.css 
+      
+
+block content 
+    div.container
+        h1 Register here
+        form(action="/register",method="post",class="myform")
+            input(type="text",class="inputclass",name="name",placeholder="Enter Your Name")      
+            input(type="phone",class="inputclass",name="phone",placeholder="Enter Your Phone number")      
+            input(type="email",class="inputclass",name="email",placeholder="Enter Your email id")      
+            input(type="text",class="inputclass",name="address",placeholder="Enter Your Address")      
+            input(type="text",class="inputclass",name="learn",placeholder="What would you like to learn?")
+            button(class="btn") 
+                |SUBMIT     

@@ -1,0 +1,62 @@
+//- index.pug
+doctype html
+html
+  head
+    title Musical-Be@t
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+        ul 
+            div#logo
+                img(src="/static/images/logo1.jpg", alt="")
+                
+            li #[a(href="/") Home]
+            li #[a(href="/") About us]
+            //- li #[a(href="/") Services ]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Register Here]
+
+    section#intro 
+      div WELCOME TO Mu$ical-Be@t
+      div.small Learn With Us
+    
+    section#ouraim 
+      h2 Our Aim
+      div.block
+        h3 Sing and Learn
+        div.block-box
+          div.block-img 
+              img(src="/static/images/sing.jpg")
+          div.block-content
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime fugiat eaque velit.
+
+      div.block
+        h3 Play instrument and learn
+        div.block-box
+          div.block-img 
+              img(src="/static/images/inst.jpg")
+          div.block-content
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime fugiat eaque velit.
+
+      div.block
+        h3  Guidance for individual 
+        div.block-box
+          div.block-img 
+              img(src="/static/images/learning.jpg")
+          div.block-content
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime fugiat eaque velit.
+
+    section#instrumentsection
+      h2 Our instruments
+        div#instrument
+          img(src="/static/images/instru1.jpg",alt="Instrument Image",class="instruimage") 
+          img(src="/static/images/instru2.jpg",alt="Instrument Image",class="instruimage")
+          img(src="/static/images/instru3.jpg",alt="Instrument Image",class="instruimage") 
+          img(src="/static/images/instru4.jpg",alt="Instrument Image",class="instruimage")
+          img(src="/static/images/instru5.jpg",alt="Instrument Image",class="instruimage")
+
+    section#footer 
+      | copyright © Mu$ical-Be@t.com | All rights are reserved
+    script
+      include ../static/index.js
