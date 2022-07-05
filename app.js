@@ -3,7 +3,7 @@ const path=require("path");
 const app=express();
 const bodyparser=require("body-parser")
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/registration', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://mihir17:ZrbsJ6C1sadyY5bU@cluster0.ssu46.mongodb.net/foodWeb?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 const port=8080;
 
 
